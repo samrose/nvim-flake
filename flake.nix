@@ -27,7 +27,7 @@
     };
   in {
     devShell.x86_64-linux = pkgs.mkShell {
-      buildInputs = [neovim-with-config pkgs.alejandra];
+      buildInputs = [neovim-with-config pkgs.alejandra pkgs.jq];
       shellHook = ''
         export LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
       '';
